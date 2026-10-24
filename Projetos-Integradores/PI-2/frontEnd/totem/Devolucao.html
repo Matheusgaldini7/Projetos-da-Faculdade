@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Devolucao.css">
+    <title>Tela de Devolução</title>
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Logo_PUC-Campinas.svg/750px-Logo_PUC-Campinas.svg.png" alt="Logo da Puc">
+        <hr>
+    </header>
+    <nav>
+        <a href="Retirada.html">Retirada de Livros</a>
+    </nav>
+
+    <div class="azul centralizar">
+        <h1>Devolução</h1><br>
+        <form id="formDevolucao">
+            <input type="text" class="input" id="ra" name="ra" pattern="\d{8}" title="RA inválido" placeholder="RA:" required><br>
+            <input type="text" class="input" id="codigoLivro" name="codigoLivro" pattern="\d+" title="Código do livro inválido" placeholder="Código do livro:" required><br>
+            <button type="submit">Confirmar Devolução</button>
+        </form>
+        <p id="mensagem"></p>
+        <p id="dataDevolucao"></p>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 PUC-Campinas. Todos os direitos reservados.</p>
+    </footer>
+    <script src="devolucaoLivro.js"></script>
+</body>
+</html>

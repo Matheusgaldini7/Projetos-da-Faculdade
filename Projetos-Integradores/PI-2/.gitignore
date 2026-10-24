@@ -1,0 +1,23 @@
+# Dependências Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Banco de dados local
+*.db
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Configurações de IDEs
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Build e cache
+dist/
+build/
+.cache/

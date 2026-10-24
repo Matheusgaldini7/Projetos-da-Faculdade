@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classificação Geral</title>
+  <link rel="stylesheet" href="ClassificacaoGeral.css">
+</head>
+
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Logo_PUC-Campinas.svg/750px-Logo_PUC-Campinas.svg.png" alt="Logo da PUC" class="logo">
+    <hr>
+  </header>
+
+  <main class="containerPrincipal">
+    <section class="niveis">
+      <h2>RELATÓRIO DE CLASSIFICAÇÃO GERAL DOS LEITORES</h2>
+
+      <div class="cards-niveis">
+        <div class="card"><strong>Iniciantes:</strong> <span id="qtdIniciantes">0</span></div>
+        <div class="card"><strong>Regulares:</strong> <span id="qtdRegulares">0</span></div>
+        <div class="card"><strong>Ativos:</strong> <span id="qtdAtivos">0</span></div>
+        <div class="card"><strong>Extremos:</strong> <span id="qtdExtremos">0</span></div>
+      </div>
+    </section>
+
+    <section class="containerPesquisar">
+      <input type="text" class="inputPesquisar" placeholder="Buscar aluno por RA...">
+      <button class="botaoPesquisar" type="button">🔍</button>
+    </section>
+
+    <section class="containerRanking">
+      <h2 class="tituloRanking">Classificação Geral</h2>
+      <table class="tabelaRanking">
+        <thead>
+          <tr>
+            <th>RA</th>
+            <th>Nome</th>
+            <th>Livros lidos</th>
+            <th>Nível</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Linhas preenchidas dinamicamente via JavaScript -->
+        </tbody>
+      </table>
+    </section>
+
+    <a href="Index.html" class="btnVoltar">Voltar</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PUC-Campinas. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="ClassificacaoGeral.js"></script>
+</body>
+</html>

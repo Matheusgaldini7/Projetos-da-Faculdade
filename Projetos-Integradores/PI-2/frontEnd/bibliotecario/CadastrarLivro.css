@@ -1,0 +1,133 @@
+/* RESET BÁSICO E FONTE */
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f6fc;  /* fundo claro moderno */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+header{
+  padding: 15px 3px 0;
+ }
+ 
+img { 
+  width: 100px; 
+  height: auto;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+} 
+
+hr {
+  background-color: #1E2C6B;
+  height: 3px;
+  border: none;
+  margin-top: 10px;
+}
+
+/* CARD PRINCIPAL */
+.azul_cadastrar_livro {
+  background-color: #213682;
+  color: #fff;
+  padding: 30px 45px;
+  border-radius: 20px;
+  margin: 20px auto; /* menos espaço para caber na tela */
+  text-align: center;
+  width: 500px; /* um pouco maior para fullHD */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.azul_cadastrar_livro h1 {
+  margin-bottom: 25px;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.9px;
+}
+
+/* FORM */
+.form-cadastro-livro {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* um pouco mais compacto */
+}
+
+.form-cadastro-livro label {
+  font-weight: 500;
+}
+
+.form-cadastro-livro input[type="text"],
+.form-cadastro-livro input[type="number"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: -6px; /* aproxima o input do label */
+  border: 2px solid transparent;
+  border-radius: 6px;
+  background-color: #e6e8f1;
+  color: #213682;
+  font-size: 16px;
+  transition: 0.25s;
+}
+
+.form-cadastro-livro input:focus {
+  outline: none;
+  border-color: #cfa446;
+  background-color: #ffffff;
+}
+
+/* BOTÕES */
+.botoes_cadastrar_livro {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.botoes_cadastrar_livro button {
+  background-color: #cfa446;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.botoes_cadastrar_livro button:hover {
+  background-color: #b58c3e;
+}
+
+/* BOTÃO VERMELHO */
+.btnVermelho {
+  background-color: #a40e09;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 34px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+  transition: 0.3s;
+  text-decoration: none; /* remove o underline do link */
+  display: inline-block;  /* mantém o tamanho como botão */
+}
+
+.btnVermelho:hover {
+  background-color: #690805;
+}
+
+/* FOOTER */
+footer {
+  margin-top: auto;
+  background-color: #1E2C6B;
+  color: white;
+  text-align: center;
+  padding: 1px;
+  font-size: 15px;
+}

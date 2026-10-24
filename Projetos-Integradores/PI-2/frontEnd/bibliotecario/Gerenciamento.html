@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciamento de Livros</title>
+  <link rel="stylesheet" href="Gerenciamento.css">
+</head>
+<body>
+  <header>
+    <img src="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Logo_PUC-Campinas.svg/750px-Logo_PUC-Campinas.svg.png" alt="Logo da PUC-Campinas">
+    <hr>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Gerenciamento de livros</h1>
+
+      <section class="resumo">
+        <div class="card-resumo">
+          <span>Total de livros</span>
+          <strong id="totalLivros">0</strong>
+        </div>
+        <div class="card-resumo">
+          <span>Exemplares disponíveis</span>
+          <strong id="livrosDisponiveis">0</strong>
+        </div>
+        <div class="card-resumo alerta">
+          <span>Exemplares emprestados</span>
+          <strong id="livrosEmprestados">0</strong>
+        </div>
+        <button class="btn atualizar" id="btnAtualizar" type="button">Atualizar</button>
+      </section>
+
+      <section class="painel">
+        <div class="cabecalho-painel">
+          <h2>Catálogo de livros</h2>
+        </div>
+        <div class="tabela-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Código</th>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Categoria</th>
+                <th>Quantidade</th>
+                <th>Status</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody id="tabelaLivros">
+              <tr>
+                <td class="mensagem-vazia" colspan="7">Carregando...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="painel">
+        <div class="cabecalho-painel">
+          <h2>Empréstimos ativos</h2>
+        </div>
+        <div class="tabela-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Código do livro</th>
+                <th>Título</th>
+                <th>RA do aluno</th>
+                <th>Nome do aluno</th>
+                <th>Data</th>
+                <th>Hora</th>
+              </tr>
+            </thead>
+            <tbody id="tabelaEmprestados">
+              <tr>
+                <td class="mensagem-vazia" colspan="6">Carregando...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="painel">
+        <div class="cabecalho-painel">
+          <h2>Histórico de empréstimos</h2>
+        </div>
+        <div class="tabela-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Código</th>
+                <th>Livro</th>
+                <th>Aluno</th>
+                <th>Retirada</th>
+                <th>Devolução</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="tabelaHistorico">
+              <tr>
+                <td class="mensagem-vazia" colspan="6">Carregando...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <a class="btnVermelho" href="Index.html">Voltar</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PUC-Campinas. Todos os direitos reservados.</p>
+  </footer>
+
+  <div class="modal oculto" id="modalEditar">
+    <div class="modal-conteudo">
+      <h3>Editar livro</h3>
+      <form id="formEditarLivro">
+        <div class="dupla">
+          <div class="input-group">
+            <label for="editarCodigo">Código</label>
+            <input type="text" id="editarCodigo" disabled>
+          </div>
+          <div class="input-group">
+            <label for="editarTitulo">Título</label>
+            <input type="text" id="editarTitulo" required>
+          </div>
+        </div>
+        <div class="dupla">
+          <div class="input-group">
+            <label for="editarAutor">Autor</label>
+            <input type="text" id="editarAutor" required>
+          </div>
+          <div class="input-group">
+            <label for="editarCategoria">Categoria</label>
+            <input type="text" id="editarCategoria" required>
+          </div>
+        </div>
+        <div class="dupla">
+          <div class="input-group">
+            <label for="editarEditora">Editora</label>
+            <input type="text" id="editarEditora" required>
+          </div>
+          <div class="input-group">
+            <label for="editarQuantidade">Quantidade</label>
+            <input type="number" id="editarQuantidade" min="0" required>
+          </div>
+        </div>
+
+        <p class="mensagem-form" id="mensagemEdicao"></p>
+
+        <div class="modal-acoes">
+          <button type="button" class="btn secundario" id="btnCancelarEdicao">Cancelar</button>
+          <button type="submit" class="btn primario">Salvar alterações</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="Gerenciamento.js"></script>
+</body>
+</html>

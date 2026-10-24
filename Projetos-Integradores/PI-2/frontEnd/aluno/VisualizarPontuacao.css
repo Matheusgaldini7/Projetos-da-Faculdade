@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/* ======== BASE ======== */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f9fd;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  padding: 15px 3px 0;
+}
+
+img {
+  width: 100px;
+  height: auto;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+
+hr {
+  background-color: #1E2C6B;
+  height: 3px;
+  border: none;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #213682;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+}
+
+/* ======== CONTAINER ======== */
+.container {
+  background: white;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto 80px;
+  padding: 35px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  color: #1e2c6b;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #213682;
+  font-size: 26px;
+}
+
+/* ======== FORM ======== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+label {
+  font-size: 15px;
+  font-weight: 500;
+  color: #1e2c6b;
+  margin-bottom: 6px;
+}
+
+.input-ra {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ra-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1.5px solid #ccd2ec;
+  background-color: #f9faff;
+  font-size: 15px;
+  flex: 1;
+}
+
+input:focus {
+  outline: none;
+  border-color: #213682;
+  box-shadow: 0 0 0 2px rgba(33, 54, 130, 0.2);
+}
+
+/* ======== BOTÃO IR ======== */
+#buscar {
+  background-color: #213682;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#buscar:hover {
+  background-color: #3049a1;
+}
+
+/* ======== CAMPOS BLOQUEADOS ======== */
+#Livroslidos,
+#classif {
+  background-color: #f0f0f0;
+  color: #777;
+  border: 1px solid #ddd;
+  cursor: not-allowed;
+}
+
+/* ======== SEÇÃO CLASSIFICAÇÃO ======== */
+.classificacao-info {
+  background-color: #f3f5ff;
+  border-left: 4px solid #213682;
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.classificacao-info h4 {
+  margin: 0 0 12px;
+  color: #213682;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.classificacao-info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.classificacao-info li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.classificacao-info li:last-child {
+  margin-bottom: 0;
+}
+
+.classificacao-info li strong {
+  color: #1e2c6b;
+  font-weight: 600;
+}
+
+/* ======== SEÇÃO LIVROS ======== */
+h3 {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 2px solid #213682;
+  padding-bottom: 6px;
+}
+
+/* ======== TABELA ======== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  color: #333;
+  margin-top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+th {
+  background-color: #e9ecf7;
+  color: #1e2c6b;
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  font-size: 17px;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid #e2e2e2;
+  font-size: 17px;
+}
+
+tr:hover {
+  background-color: #f1f4ff;
+  transition: background-color 0.2s ease;
+}
+
+/* ======== BOTÃO VOLTAR ======== */
+.vermelho {
+  display: inline-block;
+  background-color: #8d1515;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 30px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.vermelho:hover {
+  background-color: #b32020;
+}
+
+.msg-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.msg-content {
+  background: white;
+  padding: 20px 25px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 350px;
+  box-shadow: 0 0 15px #0003;
+  font-family: Arial;
+}
+
+.msg-content button {
+  margin-top: 15px;
+  padding: 8px 25px;
+  background-color: #c62828;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}

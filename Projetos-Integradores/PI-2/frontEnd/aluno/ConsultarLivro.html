@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consulta de livros</title>
+  <link rel="stylesheet" href="ConsultarLivro.css" />
+</head>
+
+<body>
+  <header>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Logo_PUC-Campinas.svg/750px-Logo_PUC-Campinas.svg.png" alt="Logo da PUC-Campinas" />
+      <hr>
+  </header>
+
+  <main>
+    <section class="consulta-container">
+      <h2>Consultar Livro</h2>
+
+      <form id="formBusca">
+        <div class="input-group">
+          <input type="text" id="buscarLivro" placeholder="Digite o código ou título..." />
+          <button type="submit">Buscar</button>
+        </div>
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Título</th>
+            <th>Quantidade</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="tabelaLivros"></tbody>
+      </table>
+
+      <p id="mensagem" class="mensagem"></p>
+
+      <div class="actions">
+        <a href="Index.html" class="btn voltar">Voltar</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 PUC-Campinas. Todos os direitos reservados.
+  </footer>
+
+  
+  
+  <script src="ConsultarLivro.js"></script>
+</body>
+</html>

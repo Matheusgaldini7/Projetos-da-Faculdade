@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de aluno</title>
+    <link rel="stylesheet" href="CadastrarAluno.css">
+</head>
+<body>
+    <header>
+        <img src="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Logo_PUC-Campinas.svg/750px-Logo_PUC-Campinas.svg.png"
+         alt="Logo da PUC-Campinas">
+        <hr>
+    </header>
+     
+    <div class="azul_cadastrar_aluno">
+        <h1 class="centralizar">Cadastrar Aluno</h1>
+        <form id="formCadastro">
+            <div>
+                <label for="ra">RA:</label>
+                <input type="text" id="ra" name="ra">
+            </div>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+            </div>
+            <div>
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="tel" name="telefone">
+            </div>
+
+            <p id="mensagem"></p> 
+            <div class="centralizar botoes_cadastrar_aluno">
+                <a class="vermelho" href="Index.html">Voltar</a>
+                <button class="amarelo" type="submit">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        © 2025 PUC-Campinas. Todos os direitos reservados.
+    </footer>
+    <script src="cadastroAluno.js"></script>
+</body>
+</html>

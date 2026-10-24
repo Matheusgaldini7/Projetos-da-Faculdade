@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* ===============================
+             GERAL
+================================= */
+body { 
+  font-family: Arial, sans-serif; 
+  background-color: white; 
+  margin: 0; 
+  padding: 0; 
+  height: 100%;
+}
+
+.centralizar {
+  text-align: center;
+}
+
+/* ===============================
+   CABEÇALHO E RODAPÉ
+================================= */
+header {
+  padding: 15px 3px 0;
+}
+
+img { 
+  width: 100px; 
+  height: auto;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+} 
+
+hr { 
+  background-color: #1E2C6B;
+  height: 3px;
+  border: none;
+  margin-top: 10px;
+} 
+
+footer {
+  background-color: #213682;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* ===============================
+   BOTÕES (estilo geral)
+================================= */
+button,
+a.amarelo,
+a.vermelho,
+.vermelho,
+.amarelo {
+  border: none;
+  cursor: pointer;
+  padding: 13px 24px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Botão amarelo */
+.amarelo {
+  background-color: #d1a13a;
+}
+.amarelo:hover {
+  background-color: #a87d19;
+  transform: translateY(-2px);
+}
+
+/* Botão vermelho */
+.vermelho {
+  background-color: #b32020;
+}
+.vermelho:hover {
+  background-color: #911212;
+  transform: translateY(-2px);
+}
+
+/* ===============================
+   ÁREAS AZUIS (componentes principais)
+================================= */
+[class^="azul_"] {
+  background: linear-gradient(145deg, #1f327a, #213682);
+  color: #fff;
+  border-radius: 14px;
+  margin: 28px auto;
+  text-align: center;
+}
+
+/* ===============================
+   CADASTRAR ALUNO
+================================= */
+.azul_cadastrar_aluno {
+  padding: 28px 20px;
+  width: 380px; /* menor e mais delicado */
+  position: absolute;
+  top: 50%;             /* move para o meio da tela */
+  left: 50%;
+  transform: translate(-50%, -50%); /* centraliza perfeitamente */
+}
+
+.azul_cadastrar_aluno h1 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.azul_cadastrar_aluno form {
+  text-align: left;
+  padding: 0 20px 8px; /* menos espaçamento interno */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.azul_cadastrar_aluno form label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+.azul_cadastrar_aluno form input {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+
+.botoes_cadastrar_aluno {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 15px;
+  margin-top: -12px;
+}
+

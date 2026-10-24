@@ -1,0 +1,72 @@
+.centralizar { 
+  text-align: center; 
+} 
+
+header{
+  padding: 15px 3px 0;
+ }
+ 
+img { 
+  width: 100px; 
+  height: auto;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}  
+
+hr { 
+  height: 2px;
+  background-color: #213682;
+  order: none;
+} 
+ 
+.azul { 
+  background-color: #213682; 
+  color: white;
+  width: 30%; 
+  max-width: 600px;
+  margin: 130px auto; /*formulário pra cima ou pra baixo*/
+  padding: 50px 20px; 
+  text-align: center; 
+  border-radius: 10px; 
+}
+
+
+.amarelo {  
+  background-color: #c89d4f; 
+  color: white; 
+  margin: 9px auto; /*distância entre os botões*/
+  width: 320px; 
+  padding: 13px 14px; /*grossura dos botões e tamanho horizontal*/
+  border-radius: 6px; 
+  font-size: 20px;
+  display: inline-block; 
+  text-decoration: none;
+}
+
+.amarelo:hover {
+  background-color: #ab7c2a;
+}
+
+.footer { 
+  background-color: #1E2C6B; 
+  color: white; 
+  text-align: center; 
+  padding: 0; 
+  font-size: 14px; 
+  position: fixed; 
+  bottom: 0; 
+  width: 100%; 
+} 
+
+body { 
+  font-family: Arial, sans-serif; 
+  background-color: white; 
+  margin: 0; 
+  padding: 0; 
+  height: 100%;
+} 
+
+h1 { 
+  font-size: 26px;
+  padding-bottom: 13px; 
+} 

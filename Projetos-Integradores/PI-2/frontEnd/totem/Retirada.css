@@ -1,0 +1,176 @@
+.centralizar {
+    text-align: center;
+}
+
+header{
+  padding: 15px 3px 0;
+ }
+ 
+img { 
+  width: 100px; 
+  height: auto;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+} 
+
+hr {
+    height: 2px;
+    background-color: #213682;
+    order: none;
+}
+
+.azul { 
+  background-color: #213682; 
+  color: white; 
+  margin: 40px auto 100px; /* formulário azul pra cima ou pra baixo */
+  width: 30%; 
+  max-width: 600px;
+  padding: 40px 20px; 
+  text-align: center; 
+  border-radius: 10px; 
+}
+
+
+.amarelo{
+  display: block;                
+  background:#CFA446;          
+  color: white;
+  margin: 12px auto;            
+  width: 320px;               
+  padding: 12px 18px;          
+  border-radius: 6px;        
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+.footer { 
+  background-color: #1E2C6B; 
+  color: white; 
+  text-align: center; 
+  padding: 0; 
+  font-size: 14px; 
+  position: fixed; 
+  bottom: 0; 
+  width: 100%; 
+} 
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+nav {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  display: flex;
+  justify-content: center; /* mantém os links centralizados */
+  gap: 18rem; /* define o espaço entre os links */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+form input {
+  display: block;
+  width: 300px;
+  padding: 10px; /*grossura dos inputs*/
+  margin: 3px auto;
+  border: none;
+  background-color: #e6e6e6;
+  font-size: 14px;
+}
+
+form button {
+  background-color: #c89d4f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 3px;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #ab7c2a;
+}
+
+h1 {
+  font-size: 26px;
+  color:white;
+}
+
+input::placeholder {
+    color: #1E2C6B; 
+    opacity: 1; /* Torna a cor mais visível em alguns navegadores */
+}
+
+a {
+  color: #213682;
+  font-size: 14px;
+}
+
+a:hover {
+  color: black;
+}
+
+.input {
+  border-radius: 6px;
+}
+
+/* Estilos para mensagens de sucesso e erro */
+#mensagem {
+  margin: 0;
+  padding: 0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  display: none;
+  max-width: 90%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+#mensagem:not(:empty) {
+  display: inline-block;
+  margin: 20px auto 15px;
+  padding: 15px 20px;
+}
+
+#mensagem.success {
+  background-color: #4caf50;
+  color: white;
+  border: 2px solid #45a049;
+}
+
+#mensagem.error {
+  background-color: #f44336;
+  color: white;
+  border: 2px solid #da190b;
+}
+
+/* Estilos para data e hora */
+#dataRetirada {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  display: none;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#dataRetirada:not(:empty) {
+  display: inline-block;
+  margin: 10px auto;
+  padding: 12px 20px;
+}

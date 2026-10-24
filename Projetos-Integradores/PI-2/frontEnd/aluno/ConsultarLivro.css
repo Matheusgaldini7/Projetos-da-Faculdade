@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+/* ===== GERAL ===== */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #f5f6fa;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header{
+  padding: 15px 3px 0;
+ }
+ 
+img { 
+  width: 100px; 
+  height: auto;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+} 
+
+hr { 
+  background-color: #1E2C6B;
+  height: 3px;
+  border: none;
+  margin-top: 10px;
+} 
+
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 20px;
+}
+
+/* ===== CONTAINER ===== */
+.consulta-container {
+  background: white;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 16px;
+  padding: 20px 50px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.consulta-container h2 {
+  text-align: center;
+  color: #213682;
+  margin-bottom: 25px;
+  font-size: 26px;
+}
+
+/* ===== INPUT ===== */
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 14px 18px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #213682;
+  box-shadow: 0 0 5px rgba(33, 54, 130, 0.3);
+}
+
+.input-group button {
+  background-color: #213682;
+  color: white;
+  border: none;
+  padding: 13px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.input-group button:hover {
+  background-color: #2b45a1;
+}
+
+/* ===== TABELA ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+table thead {
+  background-color: #213682;
+  color: white;
+}
+
+th,
+td {
+  padding: 14px 16px;
+  text-align: center;
+  font-size: 15px;
+}
+
+tbody tr {
+  background-color: #fff;
+  transition: 0.2s;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f8f9ff;
+}
+
+tbody tr:hover {
+  background-color: #edf0ff;
+}
+
+/* ===== BOTÕES ===== */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.btn.voltar {
+  background-color: #a51212;
+}
+
+.btn.voltar:hover {
+  background-color: #c72a2a;
+}
+
+.btn.emprestar {
+  background-color: #cfa446;
+}
+
+.btn.emprestar:hover {
+  background-color: #b98a33;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #213682;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+td.disponivel {
+  color: #1e8f3c;
+  font-weight: 600;
+}
+
+td.emprestado {
+  color: #d93636;
+  font-weight: 600;
+}
+
