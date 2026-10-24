@@ -5,15 +5,6 @@ Este repositório reúne os principais projetos e exercícios desenvolvidos dura
 
 ---
 
-##  Projetos
-
-###  `crud_agenda_contatos.py`
-Sistema CRUD simples de agenda de contatos, com funcionalidades como:
-- Cadastro, listagem, busca, edição e remoção de contatos
-- Validação de entrada (como telefone e nome)
-- Armazenamento de dados em arquivos
-- Uso de funções, laços de repetição e estrutura condicional
-
 ### `projeto_integrador_sistemas.py`
 Projeto integrador da disciplina de Lógica e Programação:
 - Exercícios integrados de lógica, estruturas de decisão e repetição
